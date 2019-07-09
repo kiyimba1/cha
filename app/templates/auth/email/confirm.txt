@@ -1,16 +1,13 @@
 Dear {{ user.username }},
 
+Welcome to Flasky!
 
-Welcome to Flasky!To confirm your account please click on the following link:
-
+To confirm your account please click on the following link:
 
 {{ url_for('auth.confirm', token=token, _external=True) }}
 
-
 Sincerely,
 
+The Flasky Team
 
-The Flasky 
-
-
-TeamNote: replies to this email address are not monitored
+Note: replies to this email address are not monitored.
