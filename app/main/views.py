@@ -3,6 +3,7 @@ from . import main
 from ..models import User
 from flask_login import login_required, current_user
 from .forms import EditProfileForm
+from ..decorators import admin_required
 
 
 @main.route('/')
@@ -33,7 +34,7 @@ def edit_profile():
 
 @main.route('/edit-profile/<int:id>', methods=['GET', 'POST'])
 @login_required
-#@admin_required
+@admin_required
 def edit_profile_admin(id):
     user = User.query.get_or_404(id)
     form = EditProfileAdminForm(user=user)
