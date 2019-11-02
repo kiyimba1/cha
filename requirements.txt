@@ -25,7 +25,7 @@ foreman==0.9.7
 ForgeryPy==0.1
 guess-language-spirit==0.5.3
 gunicorn==19.9.0
-httpie==1.0.2
+httpie==1.0.3
 idna==2.6
 itsdangerous==0.24
 Jinja2==2.10
